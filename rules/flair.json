@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "lichess1.org/assets/_*/flair/img/*.webp",
+            "resourceTypes": [
+                "image"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "lichess1.org/assets/flair/img/*.webp",
+            "resourceTypes": [
+                "image"
+            ]
+        }
+    }
+]
