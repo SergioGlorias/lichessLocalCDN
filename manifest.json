@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Lichess Local CDN",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "permissions": [
         "declarativeNetRequest"
     ],
@@ -12,13 +12,18 @@
                 "*://lichess1.org/*"
             ],
             "js": [
-                "content.js"
+                "scripts/flags.js"
             ],
             "run_at": "document_idle"
         }
     ],
     "declarative_net_request": {
         "rule_resources": [
+            {
+                "id": "block_fide_fed",
+                "enabled": true,
+                "path": "rules/fide-fed.json"
+            },
             {
                 "id": "block_flags",
                 "enabled": true,

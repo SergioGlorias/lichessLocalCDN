@@ -1,5 +1,5 @@
-const fedRegex = /https:\/\/lichess1\.org\/assets\/_\w{6,9}\/images\/fide-fed(?:-webp)?\/([A-Z]{3})\.(?:svg|webp)/;
-const flagRegex = /https:\/\/lichess1\.org\/assets\/_\w{6,9}\/images\/flags\/([\w-]+)\.png/;
+const fedRegex = /https:\/\/lichess1\.org\/assets(?:\/_\w{6,9})?\/images\/fide-fed(?:-webp)?\/([A-Z]{3})\.(?:svg|webp)/;
+const flagRegex = /https:\/\/lichess1\.org\/assets(?:\/_\w{6,9})?\/images\/flags\/([\w-]+)\.png/;
 
 
 function substituirURL(img) {

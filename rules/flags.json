@@ -6,7 +6,7 @@
             "type": "block"
         },
         "condition": {
-            "urlFilter": "lichess1.org/assets/_*/images/fide-fed/*.svg",
+            "urlFilter": "lichess1.org/assets/_*/images/flags/*.png",
             "resourceTypes": [
                 "image"
             ]
@@ -19,20 +19,7 @@
             "type": "block"
         },
         "condition": {
-            "urlFilter": "lichess1.org/assets/_*/images/fide-fed-webp/*.webp",
-            "resourceTypes": [
-                "image"
-            ]
-        }
-    },
-    {
-        "id": 3,
-        "priority": 1,
-        "action": {
-            "type": "block"
-        },
-        "condition": {
-            "urlFilter": "lichess1.org/assets/_*/images/flags/*.png",
+            "urlFilter": "lichess1.org/assets/images/flags/*.png",
             "resourceTypes": [
                 "image"
             ]
