@@ -5,7 +5,7 @@ const flagRegex =
 const flairRegex =
   /https:\/\/lichess1\.org\/assets(?:\/_\w{6,9})?\/flair\/img\/([\w\-\.]+)\.webp/;
 
-function substituirURL(img) {
+const substituirURL = (img) => {
   const fedMatch = img.src.match(fedRegex);
   const flagMatch = img.src.match(flagRegex);
   const flairMatch = img.src.match(flairRegex);
@@ -14,9 +14,9 @@ function substituirURL(img) {
   if (fedMatch) nameFile = `img/fide-fed/${fedMatch[1]}.webp`;
   if (flagMatch) nameFile = `img/flags/${flagMatch[1]}.png`;
   if (flairMatch) nameFile = `img/flair/${flairMatch[1]}.webp`;
-  
+
   if (nameFile) img.src = chrome.runtime.getURL(nameFile);
-}
+};
 
 const processarTodasImagens = (node) => node.forEach(substituirURL);
 
